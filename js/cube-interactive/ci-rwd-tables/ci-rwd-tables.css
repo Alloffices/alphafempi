@@ -1,0 +1,15 @@
+.ci-rwd-tables-table-wrapper {position: relative;}
+.ci-rwd-tables-table-wrapper::before,
+.ci-rwd-tables-table-wrapper::after {
+	content: ""; display: block; width: 20px; height: 100%; position: absolute; top: 0; background-repeat: repeat-y;
+	-webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.ci-rwd-tables-table-wrapper::before {left: 0; background-image: url(shadow-left.png); opacity: 0;}
+.ci-rwd-tables-table-wrapper::after {right: 0; background-image: url(shadow-right.png); opacity: 1;}
+.ci-rwd-tables-table-wrapper.ci-rwd-tables-scrolled::before {opacity: 1;}
+.ci-rwd-tables-table-wrapper.ci-rwd-tables-scroll-end::after {opacity: 0;}
+.ci-rwd-tables-table-wrapper .ci-rwd-tables-inner-wrapper {overflow-x: auto;}
+

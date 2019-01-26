@@ -1,0 +1,263 @@
+.editable {font-weight: 400; font-size: 16px; text-align: left; color: #fff}
+
+.editable h1,
+.editable h2,
+.editable h3,
+.editable h4,
+.editable h5,
+.editable h6 {font-weight: 600; color: #c5a761; position: relative; margin-top: 50px; margin-bottom: 25px}
+
+.editable h1.editable-alt,
+.editable h2.editable-alt,
+.editable h3.editable-alt,
+.editable h4.editable-alt,
+.editable h5.editable-alt,
+.editable h6.editable-alt {font-weight: 500; margin-top: 20px; margin-bottom: 10px}
+
+.editable h1,
+.editable .h1-size {font-size: 50px; margin-top: 0px}
+.editable h2,
+.editable .h2-size {font-size: 42px}
+.editable h3,
+.editable .h3-size {font-size: 32px}
+.editable h4,
+.editable .h4-size {font-size: 32px}
+.editable h5,
+.editable .h5-size {font-size: 32px}
+.editable h6,
+.editable .h6-size {font-size: 32px}
+
+.editable h1.editable-alt,
+.editable .h1-size.editable-alt {font-size: 36px}
+.editable h2.editable-alt,
+.editable .h2-size.editable-alt {font-size: 30px}
+.editable h3.editable-alt,
+.editable .h3-size.editable-alt {font-size: 24px}
+.editable h4.editable-alt,
+.editable .h4-size.editable-alt {font-size: 18px}
+.editable h5.editable-alt,
+.editable .h5-size.editable-alt {font-size: 14px}
+.editable h6.editable-alt,
+.editable .h6-size.editable-alt {font-size: 14px}
+
+.editable p {line-height: 28px; margin: 0}
+.editable p.lead {font-size: 18px; line-height: 32px}
+
+.editable a {color: #c5a761}
+.editable a:hover {text-decoration: underline}
+.editable a.internal {padding-right: 30px; position: relative;}
+.editable a.internal::after {
+    content: "\f178"; font-family: FontAwesome; font-style: normal; font-weight: normal; font-size: 18px; position: absolute; top: 50%; right: 0;
+    line-height: 100%; margin-top: -9px;
+}
+
+.editable b,
+.editable strong,
+.editable abbr,
+.editable cite,
+.editable dfn {}
+
+.editable ul li,
+.editable ol li,
+.editable dl,
+.editable table,
+.editable mark {line-height: 28px}
+
+.editable ul li,
+.editable ol li,
+.editable dl {padding-bottom: 8px}
+
+.editable ul,
+.editable ol {margin: 25px 0; list-style: none; padding: 0}
+
+.editable ul ul {margin-left: 20px;}
+.editable ul li {padding-left: 40px; position: relative;}
+.editable ul.editable-alt li {padding-left: 25px}
+.editable ul li:before {
+    content: ""; display: block; width: 10px; height: 10px; border: 2px solid #c5a761; border-radius: 50%; position: absolute; left: 10px; top: 10px
+}
+.editable ul.editable-alt li::before {
+    content: '\2014'; left: 0; top: 0; position: absolute; color: #c6a965; border: none; width: auto; height: auto; border-radius: 0
+}
+
+.editable ol li {list-style-type: decimal; list-style-position: inside; }
+
+.editable ol ul {margin-left: 20px;}
+.editable ol ul li {list-style-type:none;}
+
+.editable dl {counter-reset: my-counter; margin: 20px auto;}
+.editable dl dt {font-weight: 700; padding-left: 60px; position: relative; line-height: 28px}
+.editable dl dt:before {
+    content: counter(my-counter); counter-increment: my-counter; position: absolute; left: 10px; top: 12px; font-size: 38px;
+    font-weight: 400; color: #c5a761;
+}
+.editable dl dd {position: relative; margin-bottom: 10px; padding-left: 60px;}
+
+.editable blockquote {border:1px solid #c6a965; padding: 35px 41px 41px 41px; position: relative; color: #c6a965}
+.editable blockquote:before { 
+    content:" "; width: 41px; height: 41px;  left: -1px; top: -1px; background: url('../images/block.jpg') 0 0 no-repeat; position: absolute; z-index: 1 
+}
+.editable blockquote.editable-alt {
+    color: #999; border: none; border-left: 4px solid #c5a761; font-style: italic; line-height: 26px; text-align: left;
+    padding: 0 0 0 10px; font-size: 16px
+}
+.editable blockquote.editable-alt::before {display: none}
+
+.editable table {width: 100%}
+.editable table .vert-align { vertical-align: middle}
+.editable table tfoot {border-top: 2px solid #ddd}
+.editable table th {color: #c5a761; text-align: center}
+.editable table > thead > tr > th {border-bottom: 1px solid rgba(255, 255, 255, 0.2)}
+.editable table > tbody > tr > td,
+.editable table > tbody > tr > th,
+.editable table > tfoot > tr > td,
+.editable table > tfoot > tr > th,
+.editable table > thead > tr > td,
+.editable table > thead > tr > th {border-top: 1px solid rgba(255, 255, 255, 0.2); padding: 8px}
+
+.editable table.editable-alt {border: solid #ccc 1px; border-collapse: collapse; border-spacing: 0; width: 100%; margin: 10px auto;}
+.editable table.editable-alt caption {margin-bottom: 5px; text-align: left;}
+.editable table.editable-alt thead tr,
+.editable table.editable-alt tbody tr:nth-child(even) {background: #3b3b3b}  
+.editable table.editable-alt td,
+.editable table.editable-alt th {border-left: 1px solid #ccc; border-top: 1px solid #ccc;  padding: 10px; text-align: center; }
+.editable table.editable-alt th,
+.editable table.editable-alt thead td { font-weight: 700; border-top: none; text-align: center;}
+
+.editable figure {text-align: center; margin: 10px auto}
+.editable figure img {margin-bottom: 10px}
+.editable figcaption {font-style:italic; font-size: 14px; color: #fefefe}
+
+.editable iframe {border: none}
+
+.editable abbr {font-weight: 700; border: none; text-decoration: none;}
+.editable address {}
+.editable del {color: #c5a761;}
+.editable dfn {font-style: normal; color: #c5a761; font-weight: 700;}
+.editable mark {background: #c5a761; color: #fff; padding: 0 5px; display: inline-block; border-radius: 4px;}
+.editable hr {height: 2px; background: #c5a761; border: none; margin: 10px 0;}
+
+.editable form {margin: 20px auto;}
+.editable form fieldset {border: none;}
+.editable form legend {margin-bottom: 10px; color: #c5a761;}
+.editable form input,
+.editable form textarea {display: block; width: 100%; margin-bottom: 10px; border: 1px solid;}
+.editable form input:focus,
+.editable form textarea:focus {border-color: #c5a761;}
+.editable form input[type="text"] {line-height: 38px; height: 38px; padding: 0 10px;}
+.editable form textarea {padding: 10px;}
+.editable form input[type="submit"] {
+    height: 40px; background-color: #c5a761; color: #fff; border: none; cursor: pointer; -webkit-transition: -webkit-transform 0.3s, all 0.4s ease-out;
+    -moz-transition: -moz-transform 0.3s, all 0.4s ease-out; transition: transform 0.3s, all 0.4s ease-out;
+}
+.editable form input[type="submit"]:hover {background: #a58e59}
+
+.editable form ::-webkit-input-placeholder {font-size: 14px; font-style: normal; color: #999;} /* WebKit browsers */
+.editable form :-moz-placeholder {font-size: 14px; font-style: normal; color: #999; opacity: 1;} /* Mozilla Firefox 4 to 18 */
+.editable form ::-moz-placeholder {font-size: 14px; font-style: normal; color: #999; opacity: 1;} /* Mozilla Firefox 19+ */
+.editable form :-ms-input-placeholder {font-size: 14px; font-style: normal; color: #999;} /* Internet Explorer 10+ */
+
+.editable .left {float: left;}
+.editable .right {float: right;}
+
+.editable .float-left { float: left; padding-right: 30px; padding-bottom: 4px; padding-top: 0px; max-width: 100%; }
+.editable .float-right { float: right; padding-left: 30px; padding-bottom: 4px; padding-top: 0px; max-width: 100%; }
+
+.editable .text-left {text-align: left;}
+.editable .text-center {text-align: center;}
+.editable .text-right {text-align: right;}
+
+.editable .fs-8 {font-size: 8px}
+.editable .fs-12 {font-size: 12px}
+.editable .fs-14 {font-size: 14px}
+.editable .fs-16 {font-size: 16px}
+.editable .fs-18 {font-size: 18px}
+.editable .fs-24 {font-size: 24px}
+.editable .fs-28 {font-size: 28px}
+.editable .fs-32 {font-size: 32px}
+
+.editable .editable-image-50-txt-50,
+.editable .editable-image-txt-type-1 {
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    display: flex;   
+    align-items: center
+}
+.editable .editable-image-50-txt-50 {-webkit-flex-wrap: wrap; flex-wrap: wrap}
+.editable .editable-image-50-txt-50 > div {width: 50%}
+.editable .editable-image-50-txt-50 > div:first-child {padding-right: 10px}
+.editable .editable-image-50-txt-50 > div:last-child {padding-left: 10px}
+.editable .editable-image-50-txt-50 > div > h2:first-child,
+.editable .editable-image-50-txt-50 > div > h3:first-child,
+.editable .editable-image-50-txt-50 > div > h4:first-child,
+.editable .editable-image-50-txt-50 > div > h5:first-child,
+.editable .editable-image-50-txt-50 > div > h6:first-child {margin-top: 0}
+
+.editable .editable-image-txt-type-1 > div:first-child {width: 395px; padding-right: 20px; flex: 0 0 auto}
+.editable .editable-image-txt-type-1 > div:last-child {width: 100%; padding-left: 20px}
+.editable .editable-image-txt-type-1 > div > h2:first-child,
+.editable .editable-image-txt-type-1 > div > h3:first-child,
+.editable .editable-image-txt-type-1 > div > h4:first-child,
+.editable .editable-image-txt-type-1 > div > h5:first-child,
+.editable .editable-image-txt-type-1 > div > h6:first-child {margin-top: 0}
+
+.editable .editable-author {
+    padding-top: 40px; border-top: 1px solid #50504e; margin-top: 60px; margin-bottom: 80px;
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    align-items: center
+}
+.editable .editable-author-image {flex: 0 0 auto; width: 200px; text-align: right; padding-right: 15px}
+.editable .editable-author-image img {border-radius: 50%; border: 8px solid #50504e; padding: 8px}
+.editable .editable-author-desc {width: 100%; color: #a4a4a4; font-size: 14px}
+.editable .editable-author-label {text-transform: uppercase; color: #c5a761; font-size: 14px; font-weight: 600; margin: 0 0 5px}
+.editable .editable-author-name {color: #fff; font-size: 22px; margin: 0 0 15px; font-weight: 400}
+
+@media screen and (max-width: 1366px) {  
+    .editable dl dt::before {font-size: 32px;}
+    
+    .editable .editable-image-50-txt-50 > div {width: 100%}
+    .editable .editable-image-50-txt-50 > div:first-child,
+    .editable .editable-image-50-txt-50 > div:last-child {padding: 10px 0}
+    .editable .editable-image-50-txt-50 > div > img {display: block; margin: auto}
+}
+@media screen and (max-width: 1164px) { 
+    .editable .editable-image-txt-type-1 {-webkit-flex-wrap: wrap; flex-wrap: wrap}
+    .editable .editable-image-txt-type-1 > div:first-child,
+    .editable .editable-image-txt-type-1 > div:last-child {width: 100%; padding: 0}
+    .editable .editable-image-txt-type-1 > div:first-child {order: 2}
+    .editable .editable-image-txt-type-1 > div:last-child {order: 1}
+    .editable .editable-image-txt-type-1 > div > img {display: block; margin: 30px auto 0}
+}
+@media screen and (max-width: 768px) { 
+    .editable .editable-author {margin-top: 30px; margin-bottom: 30px; align-items: flex-start}
+    .editable .editable-author-label {font-size: 11px}
+    .editable .editable-author-name {font-size: 18px}
+    .editable .editable-author-image {width: 140px}
+    .editable .editable-author-desc {font-size: 12px}
+    .editable .editable-author-desc p {line-height: 22px}
+}
+@media screen and (max-width: 640px) {  
+    .editable h1,
+    .editable .h1-size {font-size: 30px}
+    .editable h2,
+    .editable .h2-size {font-size: 24px}
+    .editable h3,
+    .editable .h3-size {font-size: 20px}
+    .editable h4,
+    .editable .h4-size {font-size: 20px}
+    .editable h5,
+    .editable .h5-size {font-size: 20px}
+    .editable h6,
+    .editable .h6-size {font-size: 20px}
+}
+@media screen and (max-width: 520px) { 
+    .editable .editable-author {-webkit-flex-wrap: wrap; flex-wrap: wrap} 
+    .editable .editable-author-image {width: 100%; text-align: center; padding: 0 0 25px}
+    .editable .editable-author-desc {text-align: center}
+}
