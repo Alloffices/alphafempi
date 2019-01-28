@@ -391,7 +391,14 @@ body.page-blog .article.article-subpage { color: #878785; font-size: 16px; }
 
 .form-group { margin-bottom: 25px; }
 
-.form-control { border: 2px solid #868684 !important; border-radius: 22px; background: #333331;color: #fff; padding-left: 25px !important; padding-right: 25px !important; }
+.form-control { 
+  border: 1px solid #868684 !important;
+  border-radius: 3px;
+  background: #1d1d1d26;
+  color: #fff;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
 .form-content textarea.form-control { padding: 15px 25px !important; }
 input.form-control { height: 45px;  }
 select.form-control { height: 45px;}
