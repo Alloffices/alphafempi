@@ -57,9 +57,14 @@
       background-position: center bottom
  
     }
+    @media all and (min-width:768px) {
+      .mobile-logo-banner {
+        display:none !important;
+      }
+    }
     @media all and (max-width:767px){
      .banner-background-image {
-        background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)), url(https://images.unsplash.com/photo-1472507231216-a012cb1cf8f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url();
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center bottom
@@ -76,6 +81,17 @@
       }
       .mobile-padding-form {
         padding:1.5em;
+      }
+      .mobile-logo-banner {
+        width:300px;
+        margin:0 auto;
+        text-align:center;
+      }
+      .mobile-non-title-area {
+        display:none;
+      }
+      .breadcrumb-content {
+        margin: 0px 0 0px 0;
       }
     }
   </style>
@@ -94,8 +110,7 @@
             <div class="box-logo">
               <a href="index.html" title="Alpha Fem Pi">
         <img src="https://alphafempi.com/wp-content/uploads/2018/04/cropped-PRIVATE-INVESTIGATOR-MIAMI-DADE-COUNTY-PRIVATE-DETECTIVE-%E2%80%93-PRIVATE-EYE-Logo-Florida-Miami-1.jpg" alt="Reshape" />
-        <img class="hover" src="https://alphafempi.com/wp-content/uploads/2018/04/cropped-PRIVATE-INVESTIGATOR-MIAMI-DADE-COUNTY-PRIVATE-DETECTIVE-%E2%80%93-PRIVATE-EYE-Logo-Florida-Miami-1.jpg" alt="Reshape" />
-      </a>
+        <img class="hover" src="https://alphafempi.com/wp-content/uploads/2018/04/cropped-PRIVATE-INVESTIGATOR-MIAMI-DADE-COUNTY-PRIVATE-DETECTIVE-%E2%80%93-PRIVATE-EYE-Logo-Florida-Miami-1.jpg" alt="Reshape" /></a>
             </div>
             <div class="resh-toggle" onclick="menu_wrapper();">
               <span class="resp-menu-icon">
@@ -319,12 +334,15 @@
         <div class="wrapper wrapper-left background-desktop-pi">
           <div class="sect-header">
             <br/>A<br/>L<br/>P<br/>H<br/>A<br/> <br/>F<br/>E<br/>M<br/> <br/>P<br/>I<br/></div>
-          <div class="box" " style="padding-bottom: 39px !important;">
-
+          <div class="box" style="padding-bottom: 39px !important;">
+            <div style="text-align:center;margin-bottom:1em;">
+              <img class="mobile-logo-banner" src="https://alphafempi.com/wp-content/uploads/2018/04/cropped-PRIVATE-INVESTIGATOR-MIAMI-DADE-COUNTY-PRIVATE-DETECTIVE-%E2%80%93-PRIVATE-EYE-Logo-Florida-Miami-1.jpg" alt="Alpha Fem Pi" />
+              <img class="mobile-logo-banner" src="http://thezenman.com/wp-content/uploads/2012/03/female-PIs-sharing-secrets.jpg"/>
+            </div>
             <div class="box-text">
-              <p style="font-size:10px;letter-spacing:2px;color:#aaa;">PRIVATE DETECTIVE | PRIVATE EYE</p>
+              <p style="font-size:10px;letter-spacing:2px;color:#aaa;">INVESTIGATORS MIAMI</p>
 
-              <h1><strong><span style="color:#db3d32;">Miami Private Detectives</span></strong><br /> &nbsp;
+              <h1 class="mobile-non-title-area"><strong><span style="color:#db3d32;">Miami Private Detectives</span></strong><br /> &nbsp;
               </h1>
 
               <p>Private Detective Investigators are usually hired to obtain information regarding the identity,<br />habits, conduct, movements, whereabouts, affiliations, associations, transactions, reputation, or character<br />of any person or group
