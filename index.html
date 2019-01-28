@@ -50,6 +50,13 @@
   <!-- iC JS -->
   <script type="text/javascript" src="js/cube-interactive/ci-rwd-tables/ci-rwd-tables.js"></script>
   <style>
+    body {
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+      -moz-user-select: none;     /* Firefox all */
+      -ms-user-select: none;      /* IE 10+ */
+      -o-user-select: none;
+      user-select: none;
+    }
     .banner-background-image {
       background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(https://images.unsplash.com/photo-1509081258900-a15e84ae6953?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1299&q=80);
       background-size: cover;
@@ -59,6 +66,9 @@
     }
     @media all and (min-width:768px) {
       .mobile-logo-banner {
+        display:none !important;
+      }
+      .position-ab-mobile-btn {
         display:none !important;
       }
     }
@@ -93,13 +103,28 @@
       .breadcrumb-content {
         margin: 0px 0 0px 0;
       }
+      .position-ab-mobile-btn {
+        position:fixed;
+        bottom:0;
+        left:0;
+        background:#db3d32;
+        width:100%;
+        text-align:center;
+        color:#fff;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-weight:bold;
+        letter-spacing:1px;
+        z-index:999999;
+      }
+    }
+    * img {
+      pointer-events: none;
     }
   </style>
 </head>
 
-<body class="page-start">
-  <div id="page-loader"></div>
-
+<body class="page-start" oncontextmenu="return false;">
   <header>
     <div class="container">
       <div class="wrapper">
@@ -297,7 +322,7 @@
 
                     <p>Female operatives are very useful for general private investigation work, but also for gender-specific assignments which take advantage of their feminine attributes and charms.<span style="color:#c4a562;"></span></p>
                     <br />
-                    <a href="#">Contact us today for a free consultation!</a>
+                    <a href="#" style="border-radius:3px;">Contact us today for a free consultation!</a>
                   </div>
 
                 </article>
@@ -850,6 +875,9 @@
     </div>
     <div class="social-slider social-slider-left">
     </div>
+    <a href="https://web.whatsapp.com/send?phone=17862709992&text=Hello.%20I%27m%20interested%20on%20Alpha%20Fem%20Private%20Investigator%20Services" target="_blank"><div class="position-ab-mobile-btn">
+      Contact us today for a free consultation!
+    </div></a>
 
     <!-- Google map appended here -->
     <div id="map" style="width: 100%; height: 350px;"></div>
