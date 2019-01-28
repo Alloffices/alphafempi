@@ -205,7 +205,7 @@
 .editable .editable-image-txt-type-1 > div > h6:first-child {margin-top: 0}
 
 .editable .editable-author {
-    padding-top: 40px; border-top: 1px solid #50504e; margin-top: 60px; margin-bottom: 80px;
+    padding-top: 40px; margin-top: 0px; margin-bottom: 80px;
     display: -webkit-box;
     display: -moz-box; 
     display: -ms-flexbox; 
@@ -215,7 +215,7 @@
 .editable .editable-author-image {flex: 0 0 auto; width: 200px; text-align: right; padding-right: 15px}
 .editable .editable-author-image img {border-radius: 50%; border: 8px solid #50504e; padding: 8px}
 .editable .editable-author-desc {width: 100%; color: #a4a4a4; font-size: 14px}
-.editable .editable-author-label {text-transform: uppercase; color: #c5a761; font-size: 14px; font-weight: 600; margin: 0 0 5px}
+.editable .editable-author-label {text-transform: uppercase; color: #dd4232; font-size: 14px; font-weight: 600; margin: 0 0 5px}
 .editable .editable-author-name {color: #fff; font-size: 22px; margin: 0 0 15px; font-weight: 400}
 
 @media screen and (max-width: 1366px) {  
@@ -235,7 +235,7 @@
     .editable .editable-image-txt-type-1 > div > img {display: block; margin: 30px auto 0}
 }
 @media screen and (max-width: 768px) { 
-    .editable .editable-author {margin-top: 30px; margin-bottom: 30px; align-items: flex-start}
+    .editable .editable-author {margin-top: 0px; margin-bottom: 30px; align-items: flex-start}
     .editable .editable-author-label {font-size: 11px}
     .editable .editable-author-name {font-size: 18px}
     .editable .editable-author-image {width: 140px}
