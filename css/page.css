@@ -269,7 +269,12 @@ body.page-blog .article.article-subpage { color: #878785; font-size: 16px; }
 .article .format-3 {}
 .article .article-text-content {}
 .article .article-text { width: 100%; margin-bottom: 30px; }
-.article .article-text a { color: #db3d32; }
+.article .article-text a { 
+  color: #db3d32;
+  padding: 1em 2em;
+  background: #ffffff;
+  font-weight: bold;
+}
 .article .article-text ul { list-style-type: none; margin: 0px;  padding: 0px; }
 .article .article-text ul > li { position: relative; padding-left: 25px;}
 .article .article-text ul > li:before { content: '\2014'; left: 0; top: 0px; position: absolute; color:#db3d32;  }
@@ -694,8 +699,8 @@ body.page-zone_passes_page .menu:before { content: " "; position: absolute; left
 .box-goals-zone .lm { padding: 0 40px }
 .box-goals-zone .rm { padding: 0 40px }
 .box-goals-zone ol { margin: 0px; padding: 0px; list-style-type: none; width: 100%; float: left; margin-top: -8px; }
-.box-goals-zone ol > li { width: 100%; float: left; text-align: left; padding: 8px 0; }
-.box-goals-zone ol > li > a { color: #fff; text-transform: uppercase; font-weight: 600; font-size: 13px; letter-spacing: 1px; }
+.box-goals-zone ol > li { width: 100%; float: left; text-align: left; padding: 5px 0; }
+.box-goals-zone ol > li > a { color: #fff; text-transform: uppercase; font-weight: 400; font-size: 11px; }
 .box-goals-zone ol > li > a:hover { color: #d94232; text-decoration: none; }
 .box-goals-zone ol > li.active > a { color: #d94232; }
 .box-goals-zone:first-child { margin-bottom: 40px; }
